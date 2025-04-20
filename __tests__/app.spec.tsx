@@ -102,7 +102,7 @@ describe('To-Do App', () => {
     });
   });
 
-  it('should add a task, remove it, and display "Nenhuma tarefa adicionada" when list is empty', async () => {
+  it('should show list is empty when removed all tasks', async () => {
     const { getByPlaceholderText, getByText, queryByText } = render(<App />);
   
     const input = getByPlaceholderText('Digite uma tarefa...');
